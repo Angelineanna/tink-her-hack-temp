@@ -14,7 +14,7 @@
 - Member 2: [Angeline Anna Jaison ] - [LBS INSTITUTE OF TECHNOLOGY FOR WOMEN]
 
 ### Hosted Project Link
-[https://github.com/Angelineanna/studygroup]
+(https://698fe722cfc7fd9d1682368c--kaleidoscopic-gingersnap-0b808d.netlify.app/)
 
 ### Project Description
 ["We provide a safe, interactive space where students can ask doubts anonymously, give feedback, and connect with certified professionals for guidance on healthy and eco-friendly menstrual practices.]
