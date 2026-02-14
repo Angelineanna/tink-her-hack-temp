@@ -1,4 +1,4 @@
-/* General */
+/* General body styles */
 body {
     font-family: 'Segoe UI', sans-serif;
     margin: 0;
@@ -23,15 +23,15 @@ body {
 
 .welcome-page h1 {
     color: #556b2f;
-    font-size: 2.8rem;
+    font-size: 3rem;
 }
 
 .positive-msg {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 2rem;
 }
 
-/* Button */
+/* Login/Enter Button */
 .enter-btn {
     padding: 14px 28px;
     font-size: 1.2rem;
@@ -49,9 +49,9 @@ body {
     transform: scale(1.05);
 }
 
-/* Dashboard */
+/* Dashboard Page */
 .dashboard-page {
-    display: none;
+    display: none; /* hidden initially */
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -94,9 +94,9 @@ body {
     background-color: #e0d2c0;
 }
 
-/* Hidden Sections */
+/* Hidden Sections (Feedback, Doubt, Myth, Pro) */
 .hidden-section {
-    display: none;
+    display: none; /* hidden initially */
     flex-direction: column;
     align-items: center;
     margin-top: 25px;
@@ -109,14 +109,16 @@ body {
     border-radius: 12px;
     border: 1px solid #ccc;
     background-color: #fffaf3;
+    resize: none;
 }
 
-/* Animation */
+/* Fade-in animation */
 @keyframes fadeIn {
     from {opacity: 0; transform: translateY(10px);}
     to {opacity: 1; transform: translateY(0);}
 }
 
+/* Footer */
 footer {
     margin-top: 40px;
     color: #556b2f;
