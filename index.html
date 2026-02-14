@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EcoConnect Hackathon</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Welcome Page -->
+<div class="welcome-page" id="welcomePage">
+    <h1>🌿 Welcome to EcoConnect 🌿</h1>
+    <p class="positive-msg">A safe space to learn, ask doubts, and bust myths!</p>
+    <button class="enter-btn" onclick="goToDashboard()">Login</button>
+</div>
+
+<!-- Dashboard Page -->
+<div class="dashboard-page" id="dashboardPage">
+    <h2>Choose Your Action</h2>
+
+    <div class="option-box" onclick="showSection('askSection')">
+        <img src="images/doubt.png" alt="Doubt">
+        <h3>Doubt</h3>
+    </div>
+
+    <div class="option-box" onclick="showSection('proSection')">
+        <img src="images/pro.png" alt="Professional">
+        <h3>Connect with Professional</h3>
+    </div>
+
+    <div class="option-box" onclick="showSection('feedbackSection')">
+        <img src="images/feedback.png" alt="Feedback">
+        <h3>Feedback</h3>
+    </div>
+
+    <div class="option-box" onclick="showSection('mythSection')">
+        <img src="images/myth.png" alt="Myth or Fact">
+        <h3>Myth or Fact</h3>
+    </div>
+
+    <!-- Hidden Sections -->
+    <div class="hidden-section" id="askSection">
+        <h3>Ask Your Doubt</h3>
+        <textarea placeholder="Type your doubt..."></textarea>
+        <br>
+        <button onclick="hideAllSections()">Close</button>
+    </div>
+
+    <div class="hidden-section" id="proSection">
+        <h3>Connect with Professional</h3>
+        <textarea placeholder="Describe your concern..."></textarea>
+        <br>
+        <button onclick="hideAllSections()">Close</button>
+    </div>
+
+    <div class="hidden-section" id="feedbackSection">
+        <h3>Feedback</h3>
+        <textarea placeholder="Give your feedback..."></textarea>
+        <br>
+        <button onclick="hideAllSections()">Close</button>
+    </div>
+
+    <div class="hidden-section" id="mythSection">
+        <h3>Myth or Fact</h3>
+        <textarea id="mythInput" placeholder="Enter a statement..."></textarea>
+        <br>
+        <button onclick="checkMyth()">Check</button>
+        <p id="mythResult"></p>
+        <button onclick="hideAllSections()">Close</button>
+    </div>
+
+</div>
+
+<footer>🌱 Stay curious, stay safe</footer>
+<script src="script.js"></script>
+</body>
+</html>

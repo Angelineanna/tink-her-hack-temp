@@ -1,0 +1,123 @@
+/* General */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f0e6;
+    color: #3e3a32;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Welcome Page */
+.welcome-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to bottom, #f5f0e6, #e6ded1);
+}
+
+.welcome-page h1 {
+    color: #556b2f;
+    font-size: 2.8rem;
+}
+
+.positive-msg {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Button */
+.enter-btn {
+    padding: 14px 28px;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #8b5e3c;
+    color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.enter-btn:hover {
+    background-color: #a16b45;
+    transform: scale(1.05);
+}
+
+/* Dashboard */
+.dashboard-page {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.dashboard-page h2 {
+    color: #556b2f;
+    margin-bottom: 30px;
+}
+
+/* Option Boxes */
+.option-box {
+    width: 280px;
+    background-color: #f1e7dd;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    margin: 15px 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.option-box img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.option-box h3 {
+    margin: 0;
+    color: #556b2f;
+}
+
+.option-box:hover {
+    transform: translateY(-8px) scale(1.05);
+    background-color: #e0d2c0;
+}
+
+/* Hidden Sections */
+.hidden-section {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.hidden-section textarea {
+    width: 300px;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    background-color: #fffaf3;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(10px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+footer {
+    margin-top: 40px;
+    color: #556b2f;
+}
